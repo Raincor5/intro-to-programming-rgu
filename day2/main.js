@@ -212,31 +212,122 @@
 // input is invalid.
 
 
-let prompt = require("readline-sync");
+// let prompt = require("readline-sync");
 
-let data = prompt.question("Please enter the percentage score!: ");
-data = Number(data);
+// let data = prompt.question("Please enter the percentage score!: ");
+// data = Number(data);
 
-switch (true) {
-    case (data>= 0 && data < 30):
-        console.log("F");
-        break;
-    case (data>=30 && data<40):
-        console.log("E");
-        break;
-    case (data>=40 && data <50):
-        console.log("D");
-        break;
-    case (data>=50 && data <60):
-        console.log("C");
-        break;
-    case (data>=60 && data <70):
-        console.log("B");
-        break;
-    case (data >= 70 && data<100):
-        console.log("A");
-        break;
-    default:
-        console.log("Error occured!");
-        break;
-}
+// switch (true) {
+//     case (data>= 0 && data < 30):
+//         console.log("F");
+//         break;
+//     case (data>=30 && data<40):
+//         console.log("E");
+//         break;
+//     case (data>=40 && data <50):
+//         console.log("D");
+//         break;
+//     case (data>=50 && data <60):
+//         console.log("C");
+//         break;
+//     case (data>=60 && data <70):
+//         console.log("B");
+//         break;
+//     case (data >= 70 && data<100):
+//         console.log("A");
+//         break;
+//     default:
+//         console.log("Error occured!");
+//         break;
+// }
+
+
+// 1. Starline: Use a while-loop to output a line of asterisks (*) in the console. The
+// number of asterisks in the line should be determined by the user, through
+// prompting them for a number. Be sure to include appropriate validation of
+// the user’s input.
+
+// let prompt = require("readline-sync");
+
+// let data = prompt.question("Please enter the number of * to display! ");
+
+
+// data = Number(data);
+// let i = 0;
+// let str = "";
+// while (i<data) {
+//     let line = "";
+//     if (!isNaN(data)) {
+//         str += "*";
+//         i++;
+//     } else {
+//         console.log("The input must be a number!");
+//     }
+// }
+// console.log(str);
+
+
+// 2. Countdown: Write a program which will use a loop to output a count down.
+// The start value should be provided by the use via a prompt, and your program
+// should display all numbers from the start value down to 1 in the console.
+// Hint: You might want to use a loop counter which counts down instead of up
+// - think about what your condition would look like in that case.
+
+// let prompt = require("readline-sync");
+
+// let data = prompt.question("Enter the number to countdown from: ");
+// data = Number(data);
+// for (data; data > 0; data--) {
+//     console.log(data);
+// }
+
+
+// 3. Average: Write a program which accepts a sequence of values from a user
+// then will output the average. You should start by prompting for the number of
+// values to be input, use a loop to get that number of values while keeping a
+// running total, then finally output the average in the console.
+
+// let nums = 0;
+// let len = 0;
+// let prompt = require("readline-sync");
+// let data = prompt.question("How many numbers? ");
+// for (len; len < data; len++) {
+//     nums += Number(prompt.question("Enter the number -> "));
+// }
+// console.log("The average is: " + nums/len);
+
+
+// 4. Guess the number: Write a program that generates a random number
+// between 0 and 10, then prompts the user to guess the number. They should
+// continue to be prompted until they get it right.
+
+// let rng = Math.round(Math.random() * 10);
+// console.log(rng);
+
+// let prompt = require("readline-sync");
+// let data = prompt.question("Guess the number! -> ");
+
+// while (data!=rng) {
+//     data = prompt.question("Guess the number! -> ");
+// }
+
+// 5. (More challenging!) Write a program that loops through the numbers 1-20
+// and:
+// a. Prints the word “Fizz” if divisible by 3
+// b. Prints the word “Buzz” if divisible by 5
+// c. Prints the word “FizzBuzz” if divisible by both
+// d. Prints the number otherwise
+
+// for (let i = 1; i<= 20; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//         console.log(i + " FizzBuzz")
+//     } else if (i % 5 == 0) {
+//         console.log(i + " Buzz");
+//     } else if (i % 3 == 0) {
+//         console.log(i + " Fizz");
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+
