@@ -1,0 +1,44 @@
+Notes for the assessment.
+
+Suggestion for the CLI prettifier - chalk (npm install chalk).
+
+The source of truth for questions - json parser from txt files with a common pattern for topics/question/prices/etc. Example directory: question_pack_name(or quiz_name)/round/topic/question1.txt. Then a simple script/function for parsing the data from the directory (or prompt the user for the path; prompt the user to choose the question pack with scanning for directories in the project's root).
+
+1-D array to store the players: let players = [PLayer1.name, Player2.name, Player3.name];
+1-D array to store the scores: let scores = [0, 0, 0];
+2-D array to store the current topics as a grid: let currentTopics = [
+[Topic1, Topic2, Topic3],
+[Topic4, Topic5, Topic6],
+[Topic7, Topic8, Topic9]
+];
+Objects to store player data - mian Player object that player instances, eg. Player1 inherits from Player class,
+class Player {
+	constructor(name, score, ascii_logo*, colour, ...) {
+		this.name = name;
+		this.score = score;
+		this.ascii_logo = ascii_logo;
+		this.colour = colour;
+		...
+	}
+	// Setters
+	set name() {
+		
+	}
+	set colour() {
+	
+	}
+	...
+	// Getters 
+	get name() {
+		return this.name;
+	}
+	get colour() {
+		return this.colour;
+	}
+	...
+	
+};
+
+const Player1 = new Player(name, score, colour, etc.);
+...
+
