@@ -8,8 +8,7 @@ The source of truth for questions - json parser from txt files with a common pat
 1-D array to store the scores: let scores = [0, 0, 0];
 2-D array to store the current topics as a grid: let currentTopics = [
 [Topic1, Topic2, Topic3],
-[Topic4, Topic5, Topic6],
-[Topic7, Topic8, Topic9]
+[Topic4, Topic5, Topic6]
 ];
 Objects to store player data - mian Player object that player instances, eg. Player1 inherits from Player class,
 class Player {
